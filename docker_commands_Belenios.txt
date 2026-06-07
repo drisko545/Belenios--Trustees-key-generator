@@ -1,0 +1,18 @@
+
+
+Spustenie auditu v Docker prostredí
+
+docker exec affectionate_varahamihira sh -lc \
+'export PATH=/home/belenios/_run/usr/bin:$PATH; \
+mkdir -p /home/belenios/monitor/q5wCYuuWMuUfxv; \
+cd /home/belenios; \
+python3 contrib/monitor_elections.py \
+--url http://localhost:8001 \
+--uuid q5wCYuuWMuUfxv \
+--wdir /home/belenios/monitor/q5wCYuuWMuUfxv \
+--checkhash no'
+
+
+Spustenie auditu v normálně bežiacej inštancii na serveri
+
+
